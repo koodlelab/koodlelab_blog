@@ -1,0 +1,11 @@
+<% @blogs.each do |blog| %>
+  <h2>
+    <%= blog.title %>
+  </h2>
+  <p>
+    <%= blog.created_at.to_date %>
+  </p>
+  <hr>
+<% end %>
+<%= will_paginate %>
+

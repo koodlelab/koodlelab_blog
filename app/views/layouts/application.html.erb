@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Koodlelab</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body data-twttr-rendered="true">
+<div class="header">
+  <div class="center jumbotron">
+      <%= image_tag("m&m.jpg", :alt => "Jing Chen") %>
+      <!--<img src="/images/m&m.jpg" alt="Jing Chen">-->
+      <h1>Jing Chen</h1>
+      <h2>= Coder && Mom from ["Fuzhou, China", "Chicago, USA", "Hong Kong"]</h2>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <%= yield %>
+    </div>
+    <div class="col-md-4">
+      <aside class="sidebar">
+        <section>
+          <h3>Recent Posts</h3>
+          <ul id="recent_blogs">
+            <% populateMostRecentBlogs.each do |blog| %>
+              <li class="blog">
+                <%= blog.title %>
+              </li>
+            <% end %>
+          </ul>
+        </section>
+      </aside>
+    </div>
+  </div>
+  <hr>
+  <footer>
+    <p>© Koodle Lab 2014</p>
+  </footer>
+</div>
+
+</body>
+</html>

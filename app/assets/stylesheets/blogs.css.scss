@@ -1,0 +1,79 @@
+// Place all the styles related to the Blogs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+@font-face {
+  font-family: "Arapey";
+  src:font-url('Arapey-Regular.ttf') format('truetype');
+}
+
+.container {
+  max-width: 90rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  background: #fafafa;
+  max-width: 100%;
+  font-family: "Arapey",serif;
+
+  .header {
+    text-align: center;
+
+
+    h1 {
+      font-family: "Arapey",serif;
+      font-weight: normal;
+      line-height: 0.7em;
+    }
+
+    h2 {
+      padding-top: 1em;
+      margin-top: 1em;
+      font-size: 1em;
+      color: #aaa;
+      font-family: georgia, serif;
+      font-size: 0.9em;
+      letter-spacing: 0.2em;
+      font-style: italic;
+    }
+
+    img {
+      display: block;
+      height: 100px;
+      width: 100px;
+      border-radius: 100px;
+      margin: 0 auto 20px;
+    }
+  }
+
+  .footer {
+    color: #aaa;
+  }
+}
+
+aside.sidebar {
+  padding-top: 1em;
+  overflow: hidden;
+  color: #4b4b4b;
+  text-shadow: #fff 0 1px;
+  section.h1 {
+    padding-bottom: 0.6em;
+    margin: 1.5em 0 0;
+    padding-bottom: .2em;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 1em;
+  }
+  li {
+    list-style: none;
+    padding: .5em 0;
+    margin: 0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+}
+
