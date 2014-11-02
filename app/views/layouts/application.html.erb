@@ -12,8 +12,8 @@
   <div class="center jumbotron">
       <%= image_tag("m&m.jpg", :alt => "Jing Chen") %>
       <!--<img src="/images/m&m.jpg" alt="Jing Chen">-->
-      <h1>Jing Chen</h1>
-      <h2>= Coder && Mom from ["Fuzhou, China", "Chicago, USA", "Hong Kong"]</h2>
+      <h1><a href="/">Jing Chen</a></h1>
+      <h2>= Coder from ["Fuzhou, China", "Chicago, USA", "Hong Kong"]</h2>
   </div>
 </div>
 
@@ -25,11 +25,11 @@
     <div class="col-md-4">
       <aside class="sidebar">
         <section>
-          <h3>Recent Posts</h3>
+          <h1>Recent Posts</h1>
           <ul id="recent_blogs">
             <% populateMostRecentBlogs.each do |blog| %>
               <li class="blog">
-                <%= blog.title %>
+                <%= link_to blog.title, blog%>
               </li>
             <% end %>
           </ul>

@@ -30,6 +30,14 @@ body {
       font-family: "Arapey",serif;
       font-weight: normal;
       line-height: 0.7em;
+      a {
+        color: #303030;
+        text-decoration: none;
+      }
+      a:hover{
+        color: blue;
+      }
+
     }
 
     h2 {
@@ -58,26 +66,40 @@ body {
 }
 
 .blog_entries {
-  font-size: 1.2em;
+  font-size: 1.4em;
+}
+
+.blog_entry {
+  font-size: 1.4em;
+  .date {
+    font-style: italic;
+  }
 }
 
 aside.sidebar {
-  padding-top: 1em;
   overflow: hidden;
   color: #4b4b4b;
   text-shadow: #fff 0 1px;
-  section.h1 {
-    padding-bottom: 0.6em;
-    margin: 1.5em 0 0;
-    padding-bottom: .2em;
-    border-bottom: 1px solid #e0e0e0;
-    font-size: 1em;
+  padding-left: 3em;
+
+  h1 {
+    padding-left: 1.6em;
+    padding-top: 1em;
+    font-size: 1.7em;
   }
   li {
     list-style: none;
     padding: .5em 0;
     margin: 0;
-    border-bottom: 1px solid #e0e0e0;
+    font-size: 1.1em;
+  }
+
+  a {
+    color: inherit;
+    transition: color 0.5s;
+    text-decoration: none;
+  }
+  a:hover{
+    color: blue;
   }
 }
-
