@@ -6,6 +6,7 @@
     <%= @blog.created_at.to_date %>
   </p>
   <p>
-    <%= @blog.body %>
+    <%= simple_format(@blog.body) %>
   </p>
+  <%= social_share_button_tag(@blog.title) %>
 </div>

@@ -1,0 +1,15 @@
+<% @blogs.each do |blog| %>
+  <h3>
+    <%= link_to blog.title, blog %>
+  </h3>
+  <p>
+  <%= link_to "Delete", blog, method: :delete,
+                data: { confirm: "You sure?" } %>
+  </p>
+  <p>
+  <%= link_to "Edit", edit_blog_path(blog) %>
+  </p>
+  <hr>
+<% end %>
+<%= will_paginate @blogs%>
+

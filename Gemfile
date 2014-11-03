@@ -16,6 +16,8 @@ gem 'coffee-rails', '~> 4.0.0'
 
 gem 'bootstrap-sass',       '3.2.0.0'
 
+gem 'social-share-button'
+
 # Use jQuery as the JavaScript library
 gem 'jquery-rails', '~> 4.0.0.beta2'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
@@ -27,10 +29,16 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'bcrypt',               '3.1.7'
 
+gem 'tinymce-rails'
+
 gem 'faker', '1.4.2'
 
 gem 'will_paginate', '3.0.7'
 gem 'bootstrap-will_paginate', '0.0.10'
+
+gem 'capistrano', '~> 3.1.0'
+gem 'capistrano-bundler', '~> 1.1.2'
+gem 'capistrano-rails', '~> 1.1.1'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

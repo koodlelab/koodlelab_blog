@@ -10,9 +10,9 @@
 <body data-twttr-rendered="true">
 <div class="header">
   <div class="center jumbotron">
-      <%= image_tag("m&m.jpg", :alt => "Jing Chen") %>
+
       <!--<img src="/images/m&m.jpg" alt="Jing Chen">-->
-      <h1><a href="/">Jing Chen</a></h1>
+      <h1><%= image_tag("m&m.jpg", :alt => "Jing Chen") %><a href="/">Jing Chen</a></h1>
       <h2>= Coder from ["Fuzhou, China", "Chicago, USA", "Hong Kong"]</h2>
   </div>
 </div>
@@ -25,14 +25,26 @@
     <div class="col-md-4">
       <aside class="sidebar">
         <section>
-          <h1>Recent Posts</h1>
-          <ul id="recent_blogs">
-            <% populateMostRecentBlogs.each do |blog| %>
-              <li class="blog">
-                <%= link_to blog.title, blog%>
-              </li>
-            <% end %>
-          </ul>
+          <% if logged_in? %>
+            <div class="logout">
+              <p>
+                <%= link_to 'Log out', logout_path, method:"delete"%>
+              </p>
+              <p>
+                  <%= link_to 'Admin home', koodlela_path %>
+              </p>
+            </div>
+          <% else %>
+            <h1>Recent Posts</h1>
+            <ul id="recent_blogs">
+              <% populateMostRecentBlogs.each do |blog| %>
+                <li class="blog">
+                  <%= link_to blog.title, blog%>
+                </li>
+              <% end %>
+            </ul>
+            <hr>
+          <% end %>
         </section>
       </aside>
     </div>

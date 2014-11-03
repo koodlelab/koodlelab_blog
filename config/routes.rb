@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
   root 'blogs#index'
   resources :blogs, param: :title
-
+  get 'koodlela' => 'koodlela#index'
+  get 'login' => 'koodlela#new'
+  delete 'logout' => 'koodlela#destroy'
+  post 'login' => 'koodlela#create'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
