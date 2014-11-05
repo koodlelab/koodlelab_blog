@@ -1,12 +1,12 @@
 class BlogsController < ApplicationController
-  before_action :validate_login, only: [:edit, :update, :destroy]
+  before_action :validate_login, only: [:new, :edit, :update, :destroy, :create]
 
   def index
     @blogs = Blog.order('created_at DESC').paginate(page: params[:page], per_page: 5)
   end
 
   def new
-
+    @blog = Blog.new
   end
 
   def show
@@ -14,7 +14,12 @@ class BlogsController < ApplicationController
   end
 
   def create
-
+    @blog = Blog.new(user_params)
+    if @blog.save
+      redirect_to koodlela_url
+    else
+      render 'new'
+    end
   end
 
   def edit

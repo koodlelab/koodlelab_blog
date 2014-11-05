@@ -1,17 +1,1 @@
-<%= form_for(@blog) do |f| %>
-  <p>
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
-  </p>
-
-  <p>
-    <%= f.label :body %><br>
-    <%= f.text_area :body, class: "tinymce"%>
-  </p>
-
-  <p>
-    <%= f.submit %>
-  </p>
-<% end %>
-
-<%= tinymce %>
+<%= render 'blog_entry' %>

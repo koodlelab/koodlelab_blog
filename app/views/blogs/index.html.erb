@@ -6,7 +6,7 @@
     <%= blog.created_at.to_date %>
   </p>
   <p class="blog_entries">
-    <%= truncate blog.body, length: 160 %>
+    <%= truncate (blog.body.html_safe), length: 160 %>
     <%= link_to 'read more', blog %>
   </p>
   <hr>
