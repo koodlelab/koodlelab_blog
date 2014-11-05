@@ -9,6 +9,7 @@ require 'capistrano/rails'
 
 set :bundle_cmd, '/home/jing/.rbenv/shims/bundle'
 set :bundle_dir, ""
+set :bundle_flags, '--deployment --quiet'
 
 # Includes tasks from other gems included in your Gemfile
 #

@@ -40,19 +40,18 @@
           <% else %>
             <h1>Recent Posts</h1>
             <ul id="recent_blogs">
+              <hr>
               <% populateMostRecentBlogs.each do |blog| %>
                 <li class="blog">
                   <%= link_to blog.title, blog%>
                 </li>
               <% end %>
             </ul>
-            <hr>
           <% end %>
         </section>
       </aside>
     </div>
   </div>
-  <hr>
   <footer>
     <p>© Koodle Lab 2014</p>
   </footer>
