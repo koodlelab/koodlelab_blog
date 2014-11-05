@@ -1,4 +1,4 @@
 koodlelab_blog
 ==============
 
-My own blog site to be launched soon at http://www.koodlelab.com using Ruby on Rails.
+My own blog site at http://www.koodlelab.org using Ruby on Rails.
