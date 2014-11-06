@@ -17,17 +17,22 @@
   margin-right: auto;
 }
 
+p {
+  line-height: 200%;
+}
+
 body {
   background: #fafafa;
   max-width: 100%;
-  font-family: "Arapey",serif;
+  font-family: 'Lato', sans-serif;
 
   .header {
     text-align: center;
 
     h1 {
-      font-family: "Arapey",serif;
+      font-family: "Lato",serif;
       font-weight: normal;
+      font-size: 3em;
       line-height: 0.7em;
       a {
         color: #303030;
@@ -54,7 +59,7 @@ body {
       display: block;
       height: 100px;
       width: 100px;
-      border-radius: 100px;
+      border-radius: 50px;
       margin: 0 auto 20px;
 
 
@@ -68,12 +73,12 @@ body {
 
 .blog_entries {
   font-size: 1.1em;
-  font-family: 'Verdana', 'Arial', 'Open Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 .blog_entry {
   font-size: 1.1em;
-  font-family: 'Verdana', 'Arial', 'Open Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
   .date {
     font-style: italic;
   }
