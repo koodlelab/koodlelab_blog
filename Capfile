@@ -7,6 +7,10 @@ require 'capistrano/deploy'
 require 'capistrano/bundler'
 require 'capistrano/rails'
 
+task :copy_sqlite, roles: :app do
+  run "cp #{current_path}/db/production.sqlite3 #{release_path}/db/"
+end
+
 set :bundle_cmd, '/home/jing/.rbenv/shims/bundle'
 set :bundle_dir, ""
 set :bundle_flags, '--deployment --quiet'

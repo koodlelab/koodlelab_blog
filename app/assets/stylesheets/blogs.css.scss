@@ -4,7 +4,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-
 @font-face {
   font-family: "Arapey";
   src:font-url('Arapey-Regular.ttf') format('truetype');
@@ -25,7 +24,6 @@ body {
 
   .header {
     text-align: center;
-
 
     h1 {
       font-family: "Arapey",serif;
@@ -69,12 +67,12 @@ body {
 }
 
 .blog_entries {
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-family: 'Verdana', 'Arial', 'Open Sans', sans-serif;
 }
 
 .blog_entry {
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-family: 'Verdana', 'Arial', 'Open Sans', sans-serif;
   .date {
     font-style: italic;
@@ -98,7 +96,6 @@ aside.sidebar {
     margin: 0;
     font-size: 1.1em;
   }
-
   a {
     color: inherit;
     transition: color 0.5s;
